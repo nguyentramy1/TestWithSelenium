@@ -30,4 +30,8 @@ public class PageLogin {
         WebElement inventoryContainer = driver.findElement(By.className("inventory_container"));
         return inventoryContainer.isDisplayed();
     }
+    public boolean isLoginPageDisplayed() {
+        return driver.findElement(usernameField).isDisplayed();
+    }
+
 }
